@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+nav .logo {
+  width: 200px;
+  height: 50px;
+}
+nav .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+nav .nav_links {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+}
+nav .nav_links [class*=drop]:has(a) > a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+nav .nav_links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+nav .nav_links a:hover {
+  color: grey;
+  transition: color 0.3s ease-in-out;
+}
+nav .nav_links .dropdown-items {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.801);
+  border-top: 3px solid red;
+  color: white;
+  width: inherit;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.7rem;
+  position: absolute;
+  top: 66px;
+}
+nav .nav_links .dropdown-items span {
+  width: 70%;
+}
+nav .nav_links .dropdown-items span:hover {
+  color: grey;
+}
+
+#side-nav {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#side-nav .sidenav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#side-nav .sidenav-logo .fa-solid {
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#side-nav .nav_links-side-nav {
+  color: white;
+}
+#side-nav .nav_links-side-nav .sidenav-links {
+  display: flex;
+  flex-direction: column;
+}
+#side-nav .nav_links-side-nav .sidenav-links li {
+  margin-top: 0.8rem;
+}
+
+.hero-section {
+  width: 100%;
+  height: 80vh;
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(128, 128, 128, 0.692);
+  background-blend-mode: multiply;
+  display: grid;
+  place-items: center;
+}
+.hero-section .hero-section_heading {
+  font-weight: 700;
+  color: white;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedback-container .feedback {
+  width: 80%;
+  padding-block: 2rem;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-wrap: balance;
+}
+.feedback-container .feedback .company-image figure {
+  width: 500px;
+  height: 100px;
+}
+.feedback-container .feedback .company-image figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.feedback-container .feedback .feedback-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.feedback-container .feedback .feedback-text .client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=testimonials.css.map */

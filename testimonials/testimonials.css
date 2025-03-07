@@ -118,37 +118,98 @@ nav .nav_links .dropdown-items span:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 .feedback-container .feedback {
   width: 80%;
-  padding-block: 2rem;
-  border: 1px solid red;
+  padding: 2rem;
   display: flex;
   align-items: center;
-  text-align: center;
-  text-wrap: balance;
+  box-shadow: 0px 8px 28px -10px rgba(0, 0, 0, 0.3);
+}
+.feedback-container .feedback .company-image {
+  align-self: flex-start;
 }
 .feedback-container .feedback .company-image figure {
-  width: 500px;
+  width: 100px;
   height: 100px;
-}
-.feedback-container .feedback .company-image figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
+  border: 2px solid #e2e2e2;
   border-radius: 50%;
+  background-image: url("images/kt-logo-2018.png");
+  background-size: cover;
+  background-position: center;
 }
 .feedback-container .feedback .feedback-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  text-align: center;
+}
+.feedback-container .feedback .feedback-text > p {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: 500;
+  word-wrap: break-word;
 }
 .feedback-container .feedback .feedback-text .client-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.6rem;
+}
+.feedback-container .feedback .feedback-text .client-info .client_name {
+  color: red;
+}
+.feedback-container .feedback .feedback-text .client-info .client_company {
+  color: #444;
+}
+.feedback-container .feedback .feedback-text .client-info .client_company a {
+  text-decoration: none;
+  color: inherit;
+}
+.feedback-container .feedback:nth-of-type(2) .company-image figure {
+  background-image: url("images/ValagroUSA.jpg");
+}
+.feedback-container .feedback:nth-of-type(3) .company-image figure {
+  background-image: url("images/video-thumbnail.jpg");
+}
+.feedback-container .feedback:nth-of-type(4) .company-image figure {
+  background-image: url("images/austinmorgan-logoMARK-grey.png");
+}
+.feedback-container .feedback:nth-of-type(5) .company-image figure {
+  background-image: url("images/NutrientTech-icon.png");
+}
+.feedback-container .feedback:nth-of-type(6) .company-image figure {
+  background-image: url("images/WLS-logo-icon.png");
+}
+.feedback-container .feedback:nth-of-type(7) .company-image figure {
+  background-image: url("images/infusionsoft-logo.jpg");
+}
+.feedback-container .feedback:nth-of-type(8) .company-image figure {
+  background-image: url("images/kt-logo-2018.png");
+}
+.feedback-container .feedback:nth-of-type(9) .company-image figure {
+  background-image: url("images/BDD-favicon.png");
+}
+.feedback-container .feedback:nth-of-type(10) .company-image figure {
+  background-image: url("images/SWE-Logo-300x300.jpg");
+}
+.feedback-container .feedback:nth-of-type(11) .company-image figure {
+  background-image: url("images/FWF-Logo.png");
+}
+.feedback-container .feedback:nth-of-type(12) .company-image figure {
+  background-image: url("images/BWC-Logo.png");
+}
+.feedback-container .feedback:nth-of-type(13) .company-image figure {
+  background-image: url("images/Bead-Boys-Logo.jpg");
+}
+.feedback-container .feedback:nth-of-type(14) .company-image figure {
+  background-image: url("images/MustangLogo-300x225.jpg");
+}
+.feedback-container .feedback:nth-of-type(15) .company-image figure {
+  background-image: url("images/beadbarn-logo-v2-300x300.jpg");
 }
 
 /*# sourceMappingURL=testimonials.css.map */

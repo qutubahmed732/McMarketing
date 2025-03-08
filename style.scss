@@ -114,6 +114,11 @@ nav {
 
             li {
                 margin-top: .8rem;
+
+                a{
+                    text-decoration: none;
+                    color: inherit;
+                }
             }
         }
     }
@@ -796,6 +801,10 @@ footer {
 }
 
 @media(max-width: 600px) {
+
+    #side-nav {
+        padding: 1rem 1rem;
+    }
 
     .clients-section {
         

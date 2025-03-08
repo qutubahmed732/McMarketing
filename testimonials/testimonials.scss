@@ -408,6 +408,58 @@ nav {
     }
 }
 
+
+// footer
+
+footer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #444;
+
+
+    .copyright-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+
+        li:nth-of-type(1) {
+            background-color: #3b5998;
+            padding: 8px;
+            font-size: 1.1rem;
+            color: white;
+            border-radius: 5px;
+        }
+
+        li:nth-of-type(2) {
+            background-color: black;
+            padding: 8px;
+            font-size: 1.1rem;
+            color: white;
+            border-radius: 5px;
+        }
+
+        li:nth-of-type(3) {
+            background-color: dodgerblue;
+            padding: 8px;
+            font-size: 1.1rem;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}
+
+
 @media(max-width: 1050px) {
     nav {
         display: none;
@@ -439,6 +491,12 @@ nav {
     }
 
     .marketing-logos {
+        .center-heading {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+
         .logos {
             justify-content: center;
         }
@@ -451,6 +509,24 @@ nav {
             padding-inline: 1rem;
             line-height: 1.6;
 
+        }
+    }
+
+    footer {
+        .award-section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .copyright-text {
+            flex-direction: column;
+            gap: 1.5rem;
+
+            ul {
+                align-self: flex-start;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ nav {
   z-index: 1;
   width: 100%;
   position: fixed;
-  padding: 0.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,6 +115,7 @@ nav .nav_links .dropdown-items span:hover {
 }
 
 .feedback-container {
+  margin-block: 8em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,9 +162,11 @@ nav .nav_links .dropdown-items span:hover {
 }
 .feedback-container .feedback .feedback-text .client-info .client_name {
   color: red;
+  font-size: 1.1rem;
 }
 .feedback-container .feedback .feedback-text .client-info .client_company {
-  color: #444;
+  color: #a8a8bb;
+  font-size: 1.3ch;
 }
 .feedback-container .feedback .feedback-text .client-info .client_company a {
   text-decoration: none;
@@ -210,6 +213,111 @@ nav .nav_links .dropdown-items span:hover {
 }
 .feedback-container .feedback:nth-of-type(15) .company-image figure {
   background-image: url("images/beadbarn-logo-v2-300x300.jpg");
+}
+
+.marketing-logos {
+  margin-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marketing-logos .center-heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.marketing-logos .center-heading p {
+  color: red;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.marketing-logos .center-heading h1 {
+  color: #444;
+  font-size: 2rem;
+}
+.marketing-logos .logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.cta_section {
+  position: relative;
+  padding: 5rem 1rem;
+  background-image: url("images/upcoming-trends.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #444;
+  background-blend-mode: multiply;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.cta_section::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid white;
+  rotate: 180deg;
+}
+.cta_section h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.cta_section p {
+  text-align: center;
+}
+.cta_section button {
+  width: 300px;
+  height: 50px;
+  background-color: #e02b20;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+}
+
+@media (max-width: 1050px) {
+  nav {
+    display: none;
+  }
+  #side-nav {
+    display: flex;
+  }
+  #side-nav .sidenav-logo {
+    width: 90%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 800px) {
+  .feedback-container .feedback {
+    flex-direction: column;
+  }
+  .feedback-container .feedback .company-image {
+    align-self: center;
+  }
+  .feedback-container .feedback .feedback-text {
+    text-wrap: balance;
+  }
+  .marketing-logos .logos {
+    justify-content: center;
+  }
+  .cta_section {
+    padding: 3rem 1rem;
+  }
+  .cta_section p {
+    padding-inline: 1rem;
+    line-height: 1.6;
+  }
 }
 
 /*# sourceMappingURL=testimonials.css.map */

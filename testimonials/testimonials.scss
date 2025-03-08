@@ -18,7 +18,7 @@ nav {
     z-index: 1;
     width: 100%;
     position: fixed;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,6 +143,7 @@ nav {
 // <<<<<<<<<<<<<<<<=========== CLIENT FEEDBACK SECTION ================>>>>>>>>>>>>>>>
 
 .feedback-container {
+    margin-block: 8em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,6 +155,7 @@ nav {
         display: flex;
         align-items: center;
         box-shadow: 0px 8px 28px -10px rgba(0, 0, 0, 0.3);
+
 
 
         .company-image {
@@ -193,10 +195,13 @@ nav {
 
                 .client_name {
                     color: red;
+                    font-size: 1.1rem;
                 }
 
                 .client_company {
-                    color: #444;
+                    color: #a8a8bb;
+                    font-size: 1.3ch;
+
 
                     a {
                         text-decoration: none;
@@ -214,6 +219,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(3) {
         .company-image {
             figure {
@@ -221,6 +227,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(4) {
         .company-image {
             figure {
@@ -228,6 +235,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(5) {
         .company-image {
             figure {
@@ -235,6 +243,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(6) {
         .company-image {
             figure {
@@ -242,6 +251,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(7) {
         .company-image {
             figure {
@@ -249,6 +259,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(8) {
         .company-image {
             figure {
@@ -256,6 +267,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(9) {
         .company-image {
             figure {
@@ -263,6 +275,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(10) {
         .company-image {
             figure {
@@ -270,6 +283,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(11) {
         .company-image {
             figure {
@@ -277,6 +291,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(12) {
         .company-image {
             figure {
@@ -284,6 +299,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(13) {
         .company-image {
             figure {
@@ -291,6 +307,7 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(14) {
         .company-image {
             figure {
@@ -298,11 +315,142 @@ nav {
             }
         }
     }
+
     .feedback:nth-of-type(15) {
         .company-image {
             figure {
                 background-image: url("images/beadbarn-logo-v2-300x300.jpg");
             }
+        }
+    }
+}
+
+
+.marketing-logos {
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .center-heading {
+        text-align: center;
+        text-transform: uppercase;
+
+        p {
+            color: red;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            color: #444;
+            font-size: 2rem;
+        }
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+// <<<<<<<<<<<=========== CTA - SECTION ========>>>>>>>>>>>>>>
+
+.cta_section {
+    position: relative;
+    padding: 5rem 1rem;
+    background-image: url("images/upcoming-trends.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #444;
+    background-blend-mode: multiply;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 25px solid white;
+        rotate: 180deg;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    button {
+        width: 300px;
+        height: 50px;
+        background-color: #e02b20;
+        color: white;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: none;
+    }
+}
+
+@media(max-width: 1050px) {
+    nav {
+        display: none;
+    }
+
+    #side-nav {
+        display: flex;
+
+        .sidenav-logo {
+            width: 90%;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    .feedback-container {
+        .feedback {
+            flex-direction: column;
+
+            .company-image {
+                align-self: center;
+            }
+
+            .feedback-text {
+                text-wrap: balance;
+            }
+        }
+    }
+
+    .marketing-logos {
+        .logos {
+            justify-content: center;
+        }
+    }
+
+    .cta_section {
+        padding: 3rem 1rem;
+
+        p {
+            padding-inline: 1rem;
+            line-height: 1.6;
+
         }
     }
 }

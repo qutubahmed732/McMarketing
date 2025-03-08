@@ -783,8 +783,10 @@ footer {
 
     .clients-section {
         padding: 0px 0px;
+        padding-top: 2rem;
 
         .clients-name {
+            padding: 2rem;
             width: 100%;
             flex-wrap: wrap;
 
@@ -818,8 +820,7 @@ footer {
     }
 
     footer {
-        padding-block: 2rem;
-
+        
         .social-media_links {
             flex-direction: column;
             gap: 1rem;

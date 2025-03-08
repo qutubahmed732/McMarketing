@@ -18,7 +18,7 @@ nav {
     z-index: 1;
     width: 100%;
     position: fixed;
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,7 +114,7 @@ nav {
             li {
                 margin-top: .8rem;
 
-                a {
+                a{
                     text-decoration: none;
                     color: inherit;
                 }
@@ -484,6 +484,15 @@ footer {
 
     #side-nav {
         padding: 1rem 1rem;
+        
+        .sidenav-logo {
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .sidenav-links {
+            width: 100%;
+        }
     }
 
     .feedback-container {

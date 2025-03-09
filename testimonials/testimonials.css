@@ -22,7 +22,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.7);
 }
 nav .logo {
-  width: 200px;
+  width: 150px;
   height: 50px;
 }
 nav .logo img {
@@ -31,7 +31,7 @@ nav .logo img {
   object-fit: contain;
 }
 nav .nav_links {
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   gap: 1.4em;
@@ -281,13 +281,20 @@ nav .nav_links .dropdown-items span:hover {
 }
 .cta_section button {
   width: 300px;
-  height: 50px;
+  height: 60px;
   background-color: #e02b20;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
   border: none;
+  cursor: pointer;
+}
+.cta_section button:active {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 footer {
@@ -309,6 +316,7 @@ footer ul {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  list-style: none;
 }
 footer ul li:nth-of-type(1) {
   background-color: #3b5998;
@@ -316,6 +324,7 @@ footer ul li:nth-of-type(1) {
   font-size: 1.1rem;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 footer ul li:nth-of-type(2) {
   background-color: black;
@@ -323,6 +332,7 @@ footer ul li:nth-of-type(2) {
   font-size: 1.1rem;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 footer ul li:nth-of-type(3) {
   background-color: dodgerblue;
@@ -330,6 +340,11 @@ footer ul li:nth-of-type(3) {
   font-size: 1.1rem;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
+}
+footer ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 1050px) {

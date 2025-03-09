@@ -38,18 +38,18 @@ nav {
     }
 
     .nav_links {
-        font-size: 14px;
         display: flex;
         align-items: center;
         gap: 1.4em;
-
+        
         [class*="drop"]:has(a)>a {
             display: flex;
             align-items: center;
             gap: .6rem;
         }
-
+        
         a {
+            font-size: 14px;
             text-decoration: none;
             color: white;
             font-weight: bold;

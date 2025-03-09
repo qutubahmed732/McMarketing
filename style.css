@@ -137,14 +137,14 @@ nav .nav_links .dropdown-items span:hover {
   font-size: clamp(10px, 4vw, 3rem);
 }
 .slider .image .slide-description p {
-  font-size: 1.0975rem;
-  width: clamp(60%, 8vw, 100%);
+  font-size: 1.3rem;
+  width: clamp(90%, 8vw, 100%);
 }
 .slider .image .slide-description button {
-  width: 255px;
-  height: 50px;
+  width: 300px;
+  height: 60px;
   background-color: #e02b20;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 800;
   color: white;
   border: none;

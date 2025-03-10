@@ -8,7 +8,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 nav {
@@ -284,6 +283,15 @@ footer .copyright-text ul li a {
   }
 }
 @media (max-width: 650px) {
+  .form-div {
+    width: 90%;
+  }
+  .form-div form {
+    width: 100%;
+  }
+  .form-div form div input {
+    width: 100%;
+  }
   footer .copyright-text {
     flex-direction: column;
     align-items: flex-start;

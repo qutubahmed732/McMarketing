@@ -9,7 +9,6 @@
 body {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 // <<<<<<<<<<<<<================ BIG-SCREEN NAVBAR =============>>>>>>>>>>>
@@ -346,6 +345,21 @@ footer {
 }
 
 @media(max-width: 650px){
+
+    .form-div {
+        width: 90%;
+
+        form {
+            width: 100%;
+
+            div {
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     footer {
         .copyright-text {
             flex-direction: column;

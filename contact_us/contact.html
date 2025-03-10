@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Desk at McMarketing</title>
-    <link rel="stylesheet" href="support.css">
+    <title>Contact McMarketing Company</title>
+    <link rel="stylesheet" href="contact.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -19,7 +19,7 @@
     <nav id="navbar">
         <div class="logo">
             <a href="../index.html">
-                <img src="images/logo.png" alt="logo image and link">
+                <img src="Images/logo.png" alt="logo image and link">
             </a>
         </div>
         <div class="nav_links">
@@ -42,9 +42,8 @@
             <span><a href="../About_us/about.html">ABOUT US</a>
             </span>
             <span><a href="../testimonials/testimonials.html">TESTIMONIALS</a></span>
-            <span><a href="support.html" style="color: rgba(236, 96, 96, 0.986);">SUPPORT
-                    DESK</a></span>
-            <span><a href="../contact_us/contact.html">CONTACT US</a></span>
+            <span><a href="../support_desk/support.html">SUPPORT DESK</a></span>
+            <span><a href="contact.html" style="color: rgba(236, 96, 96, 0.986);">CONTACT US</a></span>
         </div>
     </nav>
 
@@ -52,7 +51,7 @@
 
     <nav id="side-nav">
         <div class="sidenav-logo">
-            <div class="logo"><a href="../index.html"><img src="images/logo.png" alt="company logo"></a></div>
+            <div class="logo"><a href="../index.html"><img src="Images/logo.png" alt="company logo"></a></div>
             <span class="fa-solid fa-bars sidenav-menu-btn"></span>
         </div>
         <div class="nav_links-side-nav">
@@ -79,94 +78,77 @@
                     </ul>
                 </li>
                 <li><a href="../testimonials/testimonials.html">Testimonials</a></li>
-                <li><a href="support.html">Support Desk</a></li>
+                <li><a href="../support_desk/support.html">Support Desk</a></li>
                 <li><a href="../contact_us/contact.html">Contact Us</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- <<<<<<<<<<<<<<================ HERO - IMAGE - SECTION ============>>>>>>>>>>>>> -->
+
+    <div class="hero-section-image"></div>
+
+    <!-- <<<<<<<<<<<<<<================ center - heading - section ================>>>>>>>>>>>>>>> -->
+
+    <div class="center-heading">
+        <p>We want to hear from you</p>
+        <h2>Contacting McMarketing Company</h2>
+
+        <p class="info-request">Please provide us with your contact information and we will get back to you within 24
+            hours.</p>
+        <hr>
+    </div>
 
 
-    <!-- <<<<<<<<<<<<<<<<=============== HERO - SECTION - IMAGE =================>>>>>>>>>>>>>>> -->
 
-    <div class="hero-section"></div>
+    <!-- <<<<<<<<<<<<<<<============ FORM - SECTION =============>>>>>>>>>>>>>>>> -->
 
-    <!-- <<<<<<<<<<<<<<<<=============== CUSTOMER - SUPPORT - SECTION ============>>>>>>>>>>>>> -->
+    <div class="form-div">
+        <h2>Existing clients seeking support, should use the <span style="color: #cd5c5c;">Support Form</span>.</h2>
 
-    <div class="customer-support-section">
-        <h1>McMarketing Company Support Desk</h1>
-        <h2>Support Request</h2>
-        <p class="company-request">Please provide us with the details of your support request and we’ll get back to you.
-        </p>
+        <form action="#">
+            <div class="input">
+                <label for="username">FULL NAME <sup>*</sup></label>
+                <input type="text" id="username">
+            </div>
+            <div class="input">
+                <label for="email">EMAIL <sup>*</sup></label>
+                <input type="email" id="email">
+            </div>
+            <div class="input">
+                <label for="phone">PHONE <sup>*</sup></label>
+                <input type="tel" id="phone">
+            </div>
+            <div class="input">
+                <label for="message">MESSAGE <sup>*</sup></label>
+                <textarea name="message" id="message" rows="8"></textarea>
+            </div>
 
-        <div>
-            <p>If you need immediate assistance, please</p>
-            <p>call <strong>916-934-4749</strong>. Thank you!</p>
-        </div>
+            <p>This site is protected by reCAPTCHA and the Google | <a href="#">Privacy Policy</a> | <a href="#">Terms
+                    of Service</a></p>
+
+            <button type="submit">SUBMIT</button>
+        </form>
     </div>
 
     <hr>
+    
 
-    <form action="#">
-        <div class="input">
-            <label for="username">FULL NAME <sup>*</sup></label>
-            <input type="text" id="username">
-        </div>
-        <div class="input">
-            <label for="email">EMAIL <sup>*</sup></label>
-            <input type="email" id="email">
-        </div>
-        <div class="input">
-            <label for="phone">PHONE <sup>*</sup></label>
-            <input type="tel" id="phone">
-        </div>
-        <div class="input">
-            <label for="message">MESSAGE <sup>*</sup></label>
-            <textarea name="message" id="message" rows="8"></textarea>
-        </div>
+     <!-- <<<<<<<<<<<============== LOGO - SECTION ==============>>>>>>>>>>>>>>>>  -->
 
-        <div class="flex">
-            <p><strong>Rate - </strong>Please refer to your contract for your applicable rates. Most requests will be completed within 3-5 business days</p>
-            <p>You can flag your submission with one of the following in the event you need your services completed more quickly:</p>
-
-            <ul>
-                <li>Rush: +20% rate adjustment</li>
-                <li>Emergency: +50% rate adjustment</li>
-                <li>Critical: +100% rate adjustment</li>
-            </ul>
-
-            <p class="bold">
-                By submitting this form you are authorizing us to apply no less than five minutes and up to one hour of time against the Webmastering time reserved in your contract, with the remainder billable at your current rate.
-            </p>
-
-            <p>If your request requires more than one hour of work, we will contact you for approval of the total time and cost before any work begins.</p>
-
-            <p>This site is protected by reCAPTCHA and the Google | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-
-            <button type="submit">SUBMIT</button>
-        </div>
-    </form>
-
-    <hr class="form-and-logo-section-divider">
-
-
-
-
-    <!-- <<<<<<<<<<<============== LOGO - SECTION ==============>>>>>>>>>>>>>>>>  -->
-
-    <div class="logo-section">
+     <div class="logo-section">
         <div class="center-heading">
             <p>Brands that Trust</p>
             <h1>McMarketing Company</h1>
         </div>
 
         <div class="logos">
-            <img src="images/jenko-logo-800x800.jpg" width="150" alt="">
-            <img src="images/kingdom-trust.png" width="150" alt="">
-            <img src="images/Orcal.png" width="150" alt="">
-            <img src="images/simplot-bw-300x103-1.png" width="150" alt="">
-            <img src="images/austin-morgan.png" width="150" alt="">
-            <img src="images/vantage.png" width="150" alt="">
+            <img src="brands/jenko-logo-800x800.jpg" width="150" alt="">
+            <img src="brands/kingdom-trust.png" width="150" alt="">
+            <img src="brands/Orcal.png" width="150" alt="">
+            <img src="brands/simplot-bw-300x103-1.png" width="150" alt="">
+            <img src="brands/austin-morgan.png" width="150" alt="">
+            <img src="brands/vantage.png" width="150" alt="">
         </div>
     </div>
 
@@ -191,13 +173,6 @@
             </ul>
         </div>
     </footer>
-
-
-
-
-
-
-
 
     <script src="../app.js"></script>
 </body>
